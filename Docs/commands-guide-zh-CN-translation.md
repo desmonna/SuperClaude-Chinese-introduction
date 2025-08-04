@@ -20,13 +20,13 @@
 **从这里开始** （无需阅读）：
 
 ```bash
-/sc:help                    # See what's available
-/sc:analyze src/            # Tries to analyze your code smartly 
-/sc:workflow feature-100-prd.md  # Creates step-by-step implementation workflow from PRD
-/sc:implement user-auth     # Creates features and components (replaces v2 /build)
-/sc:build                   # Attempts intelligent project building
-/sc:improve messy-file.js   # Tries to clean up code 
-/sc:troubleshoot "error"    # Attempts to help with problems
+/sc:help                    # 查看可用功能
+/sc:analyze src/            # 尝试智能分析您的代码 
+/sc:workflow feature-100-prd.md  # 根据产品需求文档生成逐步实现的工作流程
+/sc:implement user-auth     # 创建功能与组件（取代v2的/build命令）
+/sc:build                   # 尝试智能构建项目
+/sc:improve messy-file.js   # 尝试清理代码
+/sc:troubleshoot "error"    # 尝试协助解决问题
 ```
 
 **说实话，这些已经足够入门了。** 下面的内容是为您好奇还有哪些其他工具可用时准备的。🛠️
@@ -111,10 +111,10 @@
 **基本语法** ：
 
 ```bash
-/sc:implement user authentication system      # Implement complete feature
-/sc:implement --type component LoginForm      # Create specific component  
-/sc:implement --type api user-management      # Build API endpoints
-/sc:implement --framework react dashboard     # Framework-specific implementation
+/sc:implement user authentication system      # 完成功能实现
+/sc:implement --type component LoginForm      # 创建特定组件
+/sc:implement --type api user-management      # 构建API端点
+/sc:implement --framework react dashboard     # 框架相关实现
 ```
 
 **实用参数** ：
@@ -168,11 +168,11 @@
 **基本语法** ：
 
 ```bash
-/sc:build                          # Build current project
-/sc:build --type prod              # Production build
-/sc:build --clean                  # Clean build (remove old artifacts)
-/sc:build --optimize               # Enable optimizations
-/sc:build src/                     # Build specific directory
+/sc:build                          # 构建当前项目
+/sc:build --type prod              # 构建生产环境
+/sc:build --clean                  # 清理构建（移除旧产物）
+/sc:build --optimize               # 启用优化选项
+/sc:build src/                     # 构建指定目录
 ```
 
 **实用参数** ：
@@ -185,9 +185,9 @@
 **实际示例** :
 
 ```bash
-/sc:build --type prod --optimize   # Production build with optimizations
-/sc:build --clean --verbose        # Clean build with detailed output
-/sc:build src/components           # Build just the components folder
+/sc:build --type prod --optimize   # 生产环境构建，启用优化
+/sc:build --clean --verbose        # 清理构建，输出详细信息
+/sc:build src/components           # 仅构建 components 文件夹
 ```
 
 **注意事项** :
@@ -212,9 +212,9 @@
 **基本语法** ：
 
 ```bash
-/sc:design user-auth-system        # Design a user authentication system
-/sc:design --type api auth         # Design just the API part
-/sc:design --format spec payment   # Create formal specification
+/sc:design user-auth-system        # 设计一个用户认证系统
+/sc:design --type api auth         # 仅设计API部分
+/sc:design --format spec payment   # 创建正式规范
 ```
 
 **实用参数** ：
@@ -226,9 +226,9 @@
 **实际示例** :
 
 ```bash
-/sc:design --type api user-management    # Design user management API
-/sc:design --format spec chat-system     # Create chat system specification
-/sc:design --type database ecommerce     # Design database schema
+/sc:design --type api user-management    # 设计用户管理API
+/sc:design --format spec chat-system     # 创建聊天系统规范
+/sc:design --type database ecommerce     # 设计电子商务数据库架构
 ```
 
 **注意事项** :
@@ -255,9 +255,9 @@
 **基本语法** ：
 
 ```bash
-/sc:analyze src/                   # Analyze entire src directory
-/sc:analyze --focus security       # Focus on security issues
-/sc:analyze --depth deep app.js    # Deep analysis of specific file
+/sc:analyze src/                   # 分析src目录下的所有内容
+/sc:analyze --focus security       # 专注于安全问题的分析
+/sc:analyze --depth deep app.js    # 对特定的文件进行深度分析
 ```
 
 **实用参数** ：
@@ -269,9 +269,9 @@
 **实际示例** :
 
 ```bash
-/sc:analyze --focus security --depth deep     # Deep security analysis
-/sc:analyze --focus performance src/api/      # Performance analysis of API
-/sc:analyze --format report .                 # Generate analysis report
+/sc:analyze --focus security --depth deep     # 进行深度安全分析
+/sc:analyze --focus performance src/api/      # 进行API性能分析
+/sc:analyze --format report .                 # 生成分析报告
 ```
 
 **注意事项** :
@@ -296,9 +296,9 @@
 **基本语法** ：
 
 ```bash
-/sc:troubleshoot "login not working"     # Investigate login issue
-/sc:troubleshoot --logs error.log        # Analyze error logs
-/sc:troubleshoot performance             # Performance troubleshooting
+/sc:troubleshoot "login not working"     # 调查登录问题
+/sc:troubleshoot --logs error.log        # 分析错误日志
+/sc:troubleshoot performance             # 性能故障排除
 ```
 
 **实用参数** ：
@@ -337,9 +337,9 @@
 **基本语法** ：
 
 ```bash
-/sc:explain async/await               # Explain async/await concept
-/sc:explain --code src/utils.js       # Explain specific code file
-/sc:explain --beginner React hooks    # Beginner-friendly explanation
+/sc:explain async/await               # 解释 async/await 概念
+/sc:explain --code src/utils.js       # 解释特定代码文件
+/sc:explain --beginner React hooks    # 入门友好说明
 ```
 
 **实用参数** ：
@@ -379,9 +379,9 @@
 **基本语法** ：
 
 ```bash
-/sc:improve src/legacy/            # Improve legacy code
-/sc:improve --type performance     # Focus on performance
-/sc:improve --safe src/utils.js    # Safe, low-risk improvements only
+/sc:improve src/legacy/            # 改进旧代码
+/sc:improve --type performance     # 专注于性能
+/sc:improve --safe src/utils.js    # 仅进行安全、低风险的改进
 ```
 
 **实用参数** ：
@@ -420,9 +420,9 @@
 **基本语法** :
 
 ```bash
-/sc:cleanup src/                   # Clean up src directory
-/sc:cleanup --dead-code            # Focus on dead code removal
-/sc:cleanup --imports package.js   # Clean up imports in specific file
+/sc:cleanup src/                   # 清理src目录
+/sc:cleanup --dead-code            # 专注于删除死代码
+/sc:cleanup --imports package.js   # 清理特定文件中的导入
 ```
 
 **实用参数** :
@@ -462,10 +462,10 @@
 **基本语法** ：
 
 ```bash
-/sc:test                           # Run all tests
-/sc:test --type unit               # Run only unit tests
-/sc:test --coverage                # Generate coverage report
-/sc:test --watch src/              # Watch mode for development
+/sc:test                           # 运行所有测试
+/sc:test --type unit               # 只运行单元测试
+/sc:test --coverage                # 生成覆盖率报告
+/sc:test --watch src/              # 开发模式下的监控模式
 ```
 
 **实用参数** ：
@@ -505,9 +505,9 @@
 **基本语法** ：
 
 ```bash
-/sc:document src/api/auth.js       # Document authentication module
-/sc:document --type api            # API documentation
-/sc:document --style brief README  # Brief README file
+/sc:document src/api/auth.js       # 文档化认证模块
+/sc:document --type api            # API文档化
+/sc:document --style brief README  # 简化README文档
 ```
 
 **实用参数** ：
@@ -546,9 +546,9 @@
 **基本语法** ：
 
 ```bash
-/sc:estimate "add user authentication"    # Estimate auth feature
-/sc:estimate --detailed shopping-cart     # Detailed breakdown
-/sc:estimate --complexity user-dashboard  # Complexity analysis
+/sc:estimate "add user authentication"    # 评估认证功能
+/sc:estimate --detailed shopping-cart     # 详细分解
+/sc:estimate --complexity user-dashboard  # 复杂性分析
 ```
 
 **实用参数** :
@@ -587,9 +587,9 @@
 **基本语法** ：
 
 ```bash
-/sc:task create "implement user dashboard"  # Create new task
-/sc:task status                            # Check task status
-/sc:task breakdown "payment integration"    # Break down into subtasks
+/sc:task create "implement user dashboard"  # 创建新任务
+/sc:task status                            	# 检查任务状态
+/sc:task breakdown "payment integration"    # 分解为子任务
 ```
 
 **实用参数** ：
@@ -629,9 +629,9 @@
 **基本语法** ：
 
 ```bash
-/sc:spawn deploy-pipeline          # Orchestrate deployment
-/sc:spawn --parallel migrate-data  # Parallel data migration
-/sc:spawn setup-dev-environment    # Complex environment setup
+/sc:spawn deploy-pipeline          # 协调部署
+/sc:spawn --parallel migrate-data  # 并行数据迁移
+/sc:spawn setup-dev-environment    # 复杂环境设置
 ```
 
 **实用参数** :
@@ -670,9 +670,9 @@
 **基本语法** ：
 
 ```bash
-/sc:git commit                     # Smart commit with auto-generated message
-/sc:git --smart-commit add .       # Add and commit with smart message
-/sc:git branch feature/new-auth    # Create and switch to new branch
+/sc:git commit                     # 智能提交并自动生成消息
+/sc:git --smart-commit add .       # 使用智能消息添加和提交
+/sc:git branch feature/new-auth    # 创建并切换到新分支
 ```
 
 **实用参数** :
@@ -710,9 +710,9 @@
 **基本语法** ：
 
 ```bash
-/sc:index                          # List all commands
-/sc:index testing                  # Find commands related to testing
-/sc:index --category analysis      # Commands in analysis category
+/sc:index                          # 列出所有命令
+/sc:index testing                  # 查找与测试相关的命令
+/sc:index --category analysis      # 分析类别中的命令
 ```
 
 **实用参数** ：
@@ -749,9 +749,9 @@
 **基本语法** ：
 
 ```bash
-/sc:load                           # Load current project context
-/sc:load src/                      # Load specific directory context
-/sc:load --deep                    # Deep analysis of project structure
+/sc:load                           # 加载当前项目上下文
+/sc:load src/                      # 加载特定项目上下文
+/sc:load --deep                    # 深度分析项目结构
 ```
 
 **实用参数** ：
@@ -780,9 +780,8 @@
 
 ```bash
 # Safe improvement workflow
-/sc:improve --preview src/component.js    # See what would change
-/sc:improve --safe src/component.js       # Apply safe changes only
-
+/sc:improve --preview src/component.js    # 查看更改内容
+/sc:improve --safe src/component.js       # 仅应用安全更改
 # Comprehensive analysis
 /sc:analyze --focus security --depth deep
 /sc:test --coverage
@@ -897,5 +896,6 @@
 
 *快乐编码！请记住——你可以跳过本指南的大部分内容，在实践中学习。🎯*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1Nzc4NzMzXX0=
+eyJoaXN0b3J5IjpbLTE5ODE2NzU0NDAsLTE5NjI0NzE2ODUsMj
+c1Nzc4NzMzXX0=
 -->
